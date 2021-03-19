@@ -214,7 +214,7 @@ if __name__ == '__main__':
         viz_path = output_dir / '{}_{}_matches.{}'.format(stem0, stem1, opt.viz_extension)
         viz_eval_path = output_dir / \
             '{}_{}_evaluation.{}'.format(stem0, stem1, opt.viz_extension)
-
+        
         # Handle --cache logic.
         do_match = True
         do_eval = opt.eval
@@ -423,3 +423,5 @@ if __name__ == '__main__':
         print('AUC@5\t AUC@10\t AUC@20\t Prec\t MScore\t')
         print('{:.2f}\t {:.2f}\t {:.2f}\t {:.2f}\t {:.2f}\t'.format(
             aucs[0], aucs[1], aucs[2], prec, ms))
+
+if __name__ == "__main__":

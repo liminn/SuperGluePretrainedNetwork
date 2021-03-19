@@ -539,7 +539,7 @@ def make_matching_plot_fast(image0, image1, kpts0, kpts1, mkpts0,
                     0.5*sc, txt_color_bg, 2, cv2.LINE_AA)
         cv2.putText(out, t, (int(8*sc), int(H-Ht*(i+.6))), cv2.FONT_HERSHEY_DUPLEX,
                     0.5*sc, txt_color_fg, 1, cv2.LINE_AA)
-
+    
     if path is not None:
         cv2.imwrite(str(path), out)
 
